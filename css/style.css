@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+display: flex;
+    justify-content: center;
+    background-color: #07090e;
+    padding: 5%;
+}
+
+.principal {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    padding-top: 15px;
+    background-color: #0e131f;
+}
+
+.paragrafo {
+        font-weight: 600;
+        color: white;
+}
+
+.temporada {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #38bdf8;
+    border: 1px solid;
+    padding: 2%;
+    width: 50%;
+    border-radius: 5rem;
+    background-color: wheat;
+    margin-bottom: 3%;
+}
+
+.cyber-titulo {
+    font-weight: 900;
+    color: white;
+}
+
+.div-destaque {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    color: white;
+}
+
+.destaque {
+    border: 1px solid;
+    padding: 1%;
+    border-radius: 5rem;
+}
+
+.btn-img {
+    border-radius: 1%;
+    background-color: linear-gradient(135deg, var(--accent-blue), #8b5cf6);
+    font-weight: 900;
+}
