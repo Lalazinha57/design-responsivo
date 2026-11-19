@@ -2,32 +2,42 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 body {
-display: flex;
+    display: flex;
     justify-content: center;
     background-color: #07090e;
     padding: 5%;
 }
 
 .principal {
-    border: 1px solid;
+    border: 1px solid #23304c;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
-    width: 88%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
     padding-top: 15px;
     background-color: #0e131f;
+    height: 90%;
 }
 
 .paragrafo {
-        font-weight: 600;
-        color: white;
+    font-weight: 600;
+    color: #94a3b8;
+    font-size: medium;
+    display: flex;
+    margin-bottom: 4%;
 }
 
 .temporada {
@@ -35,34 +45,94 @@ display: flex;
     justify-content: center;
     text-align: center;
     color: #38bdf8;
-    border: 1px solid;
+    border: 1px solid rgba(6, 182, 212, 0.35);
     padding: 2%;
-    width: 50%;
+    width: 35%;
     border-radius: 5rem;
-    background-color: wheat;
     margin-bottom: 3%;
+    background-color: rgba(6, 182, 212, 0.15);
 }
 
 .cyber-titulo {
     font-weight: 900;
-    color: white;
+    color: #ffffff;
+    font-size: -webkit-xxx-large;
+    margin-bottom: 3%;
 }
+
 
 .div-destaque {
     display: flex;
     justify-content: center;
     gap: 3%;
-    color: white;
+    margin-bottom: 5%;
 }
 
 .destaque {
-    border: 1px solid;
+    border: 1px solid #23304c;
     padding: 1%;
-    border-radius: 5rem;
+    border-radius: 1rem;
+    background-color: #151d30;
+    color: #94a3b8;
 }
 
 .btn-img {
     border-radius: 1%;
     background-color: linear-gradient(135deg, var(--accent-blue), #8b5cf6);
     font-weight: 900;
+}
+
+.btn-jogar {
+    border-radius: 1rem;
+    padding: 4%;
+    width: 65%;
+    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    margin-bottom: 10%;
+    font-size: large;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.escrita-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 55%;
+}
+
+@media (min-width: 768px) {
+    .principal {
+        flex-direction: row;
+        width: 50%;
+        height: 70%;
+    }
+
+    .temporada {
+        width: 35%;
+    }
+
+    .escrita-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .img {
+        width: 25%;
+    }
+
+    .div-destaque {
+        width: 70%;
+        margin-bottom: 2%;
+    }
+
+    .btn-jogar {
+        width: 40%;
+        padding: 2%;
+    }
+    
+
 }
